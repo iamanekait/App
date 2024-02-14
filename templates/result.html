@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scraping Result</title>
+  </head>
+  <body>
+    <h1>Scraping Result</h1>
+    <p>Data has been scraped successfully and saved to CSV.</p>
+    <p>
+      CSV file location:
+      <a href="{{ url_for('download_csv', filename=filename) }}" download
+        >{{ filename }}</a
+      >
+    </p>
+  </body>
+</html>
